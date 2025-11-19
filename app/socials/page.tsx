@@ -15,11 +15,25 @@ export default function SocialsPage() {
     twitterScript.src = 'https://platform.twitter.com/widgets.js'
     twitterScript.async = true
     twitterScript.charset = 'utf-8'
+    
+    twitterScript.onload = () => {
+      if (window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load()
+      }
+    }
+    
     document.body.appendChild(twitterScript)
+
+    const retryTimeout = setTimeout(() => {
+      if (window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load()
+      }
+    }, 1000)
 
     return () => {
       document.body.removeChild(tiktokScript)
       document.body.removeChild(twitterScript)
+      clearTimeout(retryTimeout)
     }
   }, [])
 
@@ -114,7 +128,7 @@ export default function SocialsPage() {
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   className="absolute inset-0 w-full h-full rounded-2xl"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/r-7ZC1Q1LiI"
                   title="Claynosaurz YouTube Video"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -125,7 +139,7 @@ export default function SocialsPage() {
 
           <div className="text-center">
             <a 
-              href="https://youtube.com/@claynosaurz" 
+              href="https://www.youtube.com/@Claynosaurz_Official" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-red-600 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-red-700 hover:shadow-2xl hover:shadow-red-600/30 transition-all duration-500 hover:scale-105 group"
@@ -197,16 +211,19 @@ export default function SocialsPage() {
 
           <div className="max-w-2xl mx-auto mb-12">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 border border-white/50 hover:border-slate-900/30 group flex justify-center">
-              <blockquote className="twitter-tweet" data-theme="light" data-width="550">
-                <p lang="en" dir="ltr">
-                  Building the future of Web3 entertainment, one Claynosaurz at a time 🦖✨
-                  <a href="https://twitter.com/hashtag/Claynosaurz?src=hash&amp;ref_src=twsrc%5Etfw">#Claynosaurz</a>
-                </p>
-                &mdash; Claynosaurz (@claynosaurz) 
-                <a href="https://twitter.com/claynosaurz/status/1234567890123456789?ref_src=twsrc%5Etfw">
-                  January 1, 2024
-                </a>
-              </blockquote>
+              <div className="w-full flex justify-center">
+                <blockquote 
+                  className="twitter-tweet" 
+                  data-theme="light"
+                  data-dnt="true"
+                  data-width="550"
+                >
+                  <p lang="en" dir="ltr">Loading tweet...</p>
+                  <a href="https://twitter.com/Claynosaurz/status/1947724918336200756">
+                    View Tweet
+                  </a>
+                </blockquote>
+              </div>
             </div>
           </div>
 
