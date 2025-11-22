@@ -9,28 +9,28 @@ export default function TeamPage() {
     {
       name: "Nicholas Cabana",
       role: "Co-founder, CCO",
-      image: "/images/nicholas-cabana-dp.png",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841659/nicholas-cabana-dp_zw1cbt.png",
       bio: "Ex-Sony Pictures & Animal Logic. Led animation on major Hollywood productions including Spider-Man: Into the Spider-Verse.",
       credentials: "15+ years in animation",
     },
     {
       name: "Dan Cabral",
       role: "Co-founder",
-      image: "/images/dan-cabral-dp.png",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841658/dan-cabral-dp_qv19vk.png",
       bio: "Ex-Framestore. Veteran animator with decades of experience in feature films and cutting-edge visual effects.",
       credentials: "20+ years in VFX",
     },
     {
       name: "Andrew Pelekis",
       role: "CEO",
-      image: "/images/andrew-pelekis-dp.png",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841657/andrew-pelekis-dp_m0evoh.png",
       bio: "Financial expert, CFA Charterholder. Bringing business strategy and financial expertise to creative vision.",
       credentials: "CFA Charterholder",
     },
     {
       name: "Sasha Papich",
       role: "COO",
-      image: "/images/sasha-papich-dp.png",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841658/sasha-papich-dp_qpxri1.png",
       bio: "Operations expert driving efficiency and scaling the team. Ensuring smooth execution across all departments.",
       credentials: "Operations Leadership",
     },
@@ -39,35 +39,35 @@ export default function TeamPage() {
   const brandLogos = [
     {
       name: "Marvel Studios",
-      image: "/images/marvel-studios-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841605/marvel-studios-dp_ymd6tj.png",
     },
     {
       name: "Disney",
-      image: "/images/disney-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841604/disney-dp_aialek.png",
     },
     {
       name: "Warner Bros",
-      image: "/images/warner-bros-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841606/warner-bros-dp_msha9x.png",
     },
     {
       name: "Universal",
-      image: "/images/universal-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841606/universal-dp_vs79fr.png",
     },
     {
       name: "Netflix",
-      image: "/images/netflix-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841605/netflix-dp_ddca6n.png",
     },
     {
       name: "HBO",
-      image: "/images/hbo-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841605/hbo-dp_ao5yel.png",
     },
     {
       name: "Framestore Pictures",
-      image: "/images/framestore-pictures-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841604/framestore-pictures-dp_fnd3xs.png",
     },
     {
       name: "Ubisoft",
-      image: "/images/ubisoft-dp.avif",
+      image: "https://res.cloudinary.com/di6zkr8of/image/upload/v1763841605/ubisoft-dp_n2syxr.png",
     },
   ]
 
